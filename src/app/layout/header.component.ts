@@ -3,9 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <p>
-      header Works!
-    </p>
+    <div class="header">
+      <div class="row">
+        <div class="col-md-2"><a href="/"><img src="../../assets/images/logo.png"></a></div>
+        <div class="col-md-2 pull-right aligh-right text-right"><a href="/">larumugam@triadretail.com <span class="glyphicon glyphicon-chevron-down"></span></a></div>
+      </div>
+    </div>
   `,
   styles: []
 })
