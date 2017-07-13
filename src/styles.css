@@ -1,8 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+a{
+    text-decoration: none !important
+}
 .header{
     background: #efefef;
     padding: 20px 20px;
+    position: relative;
+    z-index: 99
 }
-a{
-    text-decoration: none !important
+.left-nav{
+    position: fixed;
+    display: table;
+    width: 260px;
+    height: 100%;
+    left: -260px;
+    top: 0;
+    background: #202a36; /* Old browsers */
+    background: -moz-linear-gradient(top, #202a36 0%, #202a36 31%, #202a36 72%, #384351 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #202a36 0%,#202a36 31%,#202a36 72%,#384351 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #202a36 0%,#202a36 31%,#202a36 72%,#384351 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202a36', endColorstr='#384351',GradientType=0 ); /* IE6-9 */
+    transition: all .5s ease-in;
+}
+.left-nav.active{
+    left:0
+}
+.left-nav ul{
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle
+}
+.left-nav li{
+    text-align: center;
+    border-bottom:1px solid #374250;
+    padding: 5% 0;
+    cursor: pointer
+}
+.left-nav li{
+    border-top:1px solid #374250
+}
+.left-nav p{
+    color: #FFF;
+    font-size: 22px;
+}
+.slide-toggle{
+    width: 19px;
+    height: 148px;
+    background: url(assets/images/slide-left.png) no-repeat;
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer
+}
+.slide-toggle.show{
+    background: url(assets/images/slide-right.png) no-repeat;
 }
