@@ -13,6 +13,7 @@ import { DraggableDirective } from './directives/draggable.directive';
 
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
+import { StageComponent } from './stage/stage.component';
  
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { environment } from '../environments/environment';
     PalettesComponent,
     ImageuploadComponent,
     ImagepropertiesComponent,
-    DraggableDirective
+    DraggableDirective,
+    StageComponent
   ],
   imports: [
     BrowserModule,
