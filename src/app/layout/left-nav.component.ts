@@ -27,7 +27,7 @@ export class LeftNavComponent{
 
   constructor() { }
 
-  leftnavopen = true;
+  leftnavopen = true; 
 
   slideToggle(){
     this.leftnavopen = !this.leftnavopen;

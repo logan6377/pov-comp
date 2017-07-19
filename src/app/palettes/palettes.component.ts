@@ -13,4 +13,6 @@ export class PalettesComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

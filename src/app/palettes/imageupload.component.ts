@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'app-imageupload',
 	templateUrl: './imageupload.component.html',
   styleUrls: ['./palettes.component.css']
 })
-export class ImageuploadComponent implements OnInit {
+export class ImageuploadComponent {
 
-  constructor() { }
+  paletteVisible = false; 
 
-  ngOnInit() {
+  closePalette(){
+    this.paletteVisible = !this.paletteVisible
   }
 
 }

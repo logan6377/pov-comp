@@ -1,8 +1,8 @@
-<div class="palette image">
+<div class="palette image" *ngIf="paletteVisible">
   <div class="palette-header">
       <span class='palette-dotted-icon'><img src='../../assets/images/header-dotted.png' alt="header dotted"/></span>
     <p class='palette-head'>image</p>
-    <a class="palette-close">X</a>
+    <a class="palette-close" (click)="closePalette()">X</a>
   </div>
   <div class="palette-body">
     <div class='palette-cont-row'>

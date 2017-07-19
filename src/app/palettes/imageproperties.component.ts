@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-imageproperties',
   template: `
-    <div class="palette element">
+    <div class="palette element" *ngIf="paletteVisible">
 				<div class="palette-header">
 				    <span class='palette-dotted-icon'><img src='../../assets/images/header-dotted.png' alt="header dotted"/></span>
 					<p class='palette-head'>element properties</p>
@@ -93,5 +93,9 @@ export class ImagepropertiesComponent implements OnInit {
 
   ngOnInit() {
   }
+  paletteVisible = false; 
 
+  closePalette(){
+    this.paletteVisible = !this.paletteVisible
+  }
 }
