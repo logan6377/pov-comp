@@ -93,7 +93,7 @@ export class ImagepropertiesComponent implements OnInit {
 
   ngOnInit() {
   }
-  paletteVisible = false; 
+  paletteVisible = true; 
 
   closePalette(){
     this.paletteVisible = !this.paletteVisible

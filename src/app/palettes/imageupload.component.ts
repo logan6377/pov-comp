@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ImageuploadComponent {
 
-  paletteVisible = false; 
+  paletteVisible = true; 
 
   closePalette(){
     this.paletteVisible = !this.paletteVisible
